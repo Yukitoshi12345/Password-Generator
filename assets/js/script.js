@@ -42,6 +42,8 @@ function writePassword() {
   passwordText.value = password;
 
 }
+// regex is used to match a string that contains only digits.
+var regex = /^[0-9]+$/;
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
@@ -49,14 +51,17 @@ generateBtn.addEventListener("click", writePassword);
 function generatePassword() {
   passwordCharacterCount = window.prompt("Please select the desired password length, ranging from 8 to 128 characters.")
   console.log("Password length: " + passwordCharacterCount);
-
-  if (passwordCharacterCount < 8 || passwordCharacterCount > 128) {
-    passwordCharacterCount = prompt("The password length must be between 8 and 128 characters");
-    console.log("Password length: " + passwordCharacterCount);
+  
+  // If you leave the answer blank or non-numerical values or values outside of 8-128, then it alerts that a value is needed to proceed.
+  if (!passwordCharacterCount || !regex.test(passwordCharacterCount)) {
+    alert("Must be a value.");
+  }  
+ 
+  else if (passwordCharacterCount < 8 || passwordCharacterCount > 128) {
+    alert("The password length must be between 8 and 128 characters.");
+  
   }
-  else if (!passwordCharacterCount) {
-    alert("A value is needed to proceed");
-  }
+ 
   else {
     confirmLowerCase = confirm("Do you want to include lower case letters?");
     console.log("Lower case " + confirmLowerCase);
