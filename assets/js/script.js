@@ -4,6 +4,13 @@ var generateBtn = document.querySelector("#generate");
 
 var passwordCharacterCount;
 
+var confirmLowerCase;
+var confirmUpperCase;
+var confirmNumbers;
+var confirmSpecialCharacters
+
+
+
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 // There are 2 ways of producing upperCase. One is simply:
@@ -21,7 +28,7 @@ var upperCase = toUpperCase(lowerCase);
 // To test upperCase runs properly:
 console.log(upperCase);
 
-var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+var numeric = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var specialCharacter = [' ', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~'];;
 
 // To test the specialCharacter runs properly:
@@ -40,11 +47,25 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
-  passwordCharacterCount = prompt("Please select the desired password length, ranging from 8 to 128 characters.")
+  passwordCharacterCount = window.prompt("Please select the desired password length, ranging from 8 to 128 characters.")
   console.log("Password length: " + passwordCharacterCount);
 
   if (passwordCharacterCount < 8 || passwordCharacterCount > 128) {
-    passwordCharacterCount = prompt("The password length must be between 8 and 128 characters")
-    console.log("Password length: " + passwordCharacterCount)
+    passwordCharacterCount = prompt("The password length must be between 8 and 128 characters");
+    console.log("Password length: " + passwordCharacterCount);
+  }
+  else if (!passwordCharacterCount) {
+    alert("A value is needed to proceed");
+  }
+  else {
+    confirmLowerCase = confirm("Do you want to include lower case letters?");
+    console.log("Lower case " + confirmLowerCase);
+
+    confirmUpperCase = confirm("Do you want to include upper case letters?");
+    console.log("Upper case " + confirmUpperCase);
+    confirmNumbers = confirm("Do you want to include numbers?");
+    console.log("Number " + confirmNumbers);
+    confirmSpecialCharacters = confirm("Do you want to include special characters?");
+    console.log("Special Character " + confirmSpecialCharacters);
   }
 }
