@@ -145,5 +145,32 @@ function generatePassword() {
     console.log(userPreference);
   }
 
+  // If the user picks only 1 from lower/upper/numeric/special-characters:
   
+  // If the user didn't pick uppercase, numeric, and special-characters:
+  else if (confirmLowerCase) {
+    userPreference = lowerCase;
+    console.log(userPreference);
+  }
+
+  // If the user didn't pick lowercase, numeric, and special-characters:
+  else if (confirmUpperCase) {
+    userPreference = upperCase;
+    console.log(userPreference);
+  }
+
+  // If the user didn't pick lowercase, uppercase, and special-characters:
+  else if (confirmNumbers) {
+    userPreference = numeric;
+    console.log(userPreference);
+  }
+
+  // If the user didn't pick lowercase, uppercase, and numeric:
+  else if (confirmSpecialCharacters) {
+    userPreference = specialCharacters;
+    console.log(userPreference);
+  }
+
+
+
 }
