@@ -171,6 +171,10 @@ function generatePassword() {
     console.log(userPreference);
   }
 
+  // If the user doesn't pick any options from lower/upper/numeric/special-characters:
 
-
+  else {
+    (!confirmLowerCase && !confirmUpperCase && !confirmNumbers && !confirmSpecialCharacters) {
+      userPreference = window.alert("You must choose at least one option.")
+    }
 }
