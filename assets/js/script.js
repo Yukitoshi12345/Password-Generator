@@ -75,36 +75,75 @@ function generatePassword() {
     console.log("Special Character: " + confirmSpecialCharacters);
   };
 
-  // If the user picks all 4 lower/upper/numeric/special-characters
+  // If the user picks all 4 lower/upper/numeric/special-characters:
   if (confirmLowerCase && confirmUpperCase && confirmNumbers && confirmSpecialCharacters) {
     userPreference = lowerCase.concat(upperCase, numeric, specialCharacters);
-    console.log(userPreference)
+    console.log(userPreference);
   }
 
-  // If the user picks 3 from lower/upper/numeric/special-characters
+  // If the user picks 3 from lower/upper/numeric/special-characters:
 
-  // If the user didn't pick the lower:
+  // If the user didn't pick the lowercase:
   else if (confirmUpperCase && confirmNumbers && confirmSpecialCharacters) {
     userPreference = upperCase.concat(numeric, specialCharacters);
-    console.log(userPreference)
+    console.log(userPreference);
   }
 
-  // If the user didn't pick the upper:
+  // If the user didn't pick the uppercase:
   else if (confirmLowerCase && confirmNumbers && confirmSpecialCharacters) {
     userPreference = lowerCase.concat(numeric, specialCharacters);
-    console.log(userPreference)
+    console.log(userPreference);
   }
 
   // If the user didn't pick numeric:
   else if (confirmLowerCase && confirmUpperCase && confirmSpecialCharacters) {
     userPreference = lowerCase.concat(upperCase, specialCharacters);
-    console.log(userPreference)
+    console.log(userPreference);
   }
 
-    // If the user didn't pick special-characters:
-    else if (confirmLowerCase && confirmUpperCase && confirmNumbers) {
-      userPreference = lowerCase.concat(upperCase, confirmNumbers);
-      console.log(userPreference)
-    }
+  // If the user didn't pick special-characters:
+  else if (confirmLowerCase && confirmUpperCase && confirmNumbers) {
+    userPreference = lowerCase.concat(upperCase, confirmNumbers);
+    console.log(userPreference);
+  }
+
+  // If the user picks 2 from lower/upper/numeric/special-characters:
+  
+  // If the user didn't pick numeric and special-characters:
+  else if (confirmLowerCase && confirmUpperCase) {
+    userPreference = lowerCase.concat(upperCase);
+    console.log(userPreference);
+  }
+
+  // If the user didn't pick uppercase and special-characters:
+  else if (confirmLowerCase && confirmNumbers) {
+    userPreference = lowerCase.concat(numeric);
+    console.log(userPreference);
+  }
+
+  // If the user didn't pick uppercase and numeric:
+  else if (confirmLowerCase && confirmSpecialCharacters) {
+    userPreference = lowerCase.concat(specialCharacters);
+    console.log(userPreference);
+  }
+
+  // If the user didn't pick lowercase and special-characters:
+  else if (confirmUpperCase && confirmNumbers) {
+    userPreference = upperCase.concat(numeric);
+    console.log(userPreference);
+  }
+
+  // If the user didn't pick lowercase and numeric:
+  else if (confirmUpperCase && confirmSpecialCharacters) {
+    userPreference = upperCase.concat(confirmSpecialCharacters);
+    console.log(userPreference);
+  }
+
+  // If the user didn't pick lowercase and uppercase:
+  else if (confirmNumbers && confirmSpecialCharacters) {
+    userPreference = numeric.concat(specialCharacters);
+    console.log(userPreference);
+  }
+
   
 }
