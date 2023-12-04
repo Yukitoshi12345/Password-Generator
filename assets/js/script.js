@@ -1,13 +1,12 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-
 var passwordCharacterCount;
-
 var confirmLowerCase;
 var confirmUpperCase;
 var confirmNumbers;
 var confirmSpecialCharacters;
+var userPreference;
 
 // regex is used to match a string that contains only digits.
 var regex = /^[0-9]+$/;
@@ -30,10 +29,10 @@ var upperCase = toUpperCase(lowerCase);
 console.log(upperCase);
 
 var numeric = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-var specialCharacter = [' ', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~'];
+var specialCharacters = [' ', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~'];
 
 // To test the specialCharacter runs properly:
-console.log(specialCharacter);
+console.log(specialCharacters);
 
 // Write password to the #password input
 function writePassword() {
@@ -52,12 +51,12 @@ function generatePassword() {
   
   // If you leave the answer blank or non-numerical values, it alerts that a value is needed to proceed.
   if (!passwordCharacterCount || !regex.test(passwordCharacterCount)) {
-    alert("Must be a value.");
+    window.alert("Must be a value.");
   }  
  
   // If you leave the answer outside of 8-128, it alerts that a value between 8-128 is needed to proceed.
   else if (passwordCharacterCount < 8 || passwordCharacterCount > 128) {
-    alert("The password length must be between 8 and 128 characters.");
+    window.alert("The password length must be between 8 and 128 characters.");
   }
  
   // If the entered is a value between 8-128, i.e. the criteria is met, it proceed to the next step.
@@ -74,5 +73,38 @@ function generatePassword() {
     // Confirm if you want to have special characters in the generated password.
     confirmSpecialCharacters = confirm("Do you want to include special characters?");
     console.log("Special Character: " + confirmSpecialCharacters);
+  };
+
+  // If the user picks all 4 lower/upper/numeric/special-characters
+  if (confirmLowerCase && confirmUpperCase && confirmNumbers && confirmSpecialCharacters) {
+    userPreference = lowerCase.concat(upperCase, numeric, specialCharacters);
+    console.log(userPreference)
   }
+
+  // If the user picks 3 from lower/upper/numeric/special-characters
+
+  // If the user didn't pick the lower:
+  else if (confirmUpperCase && confirmNumbers && confirmSpecialCharacters) {
+    userPreference = upperCase.concat(numeric, specialCharacters);
+    console.log(userPreference)
+  }
+
+  // If the user didn't pick the upper:
+  else if (confirmLowerCase && confirmNumbers && confirmSpecialCharacters) {
+    userPreference = lowerCase.concat(numeric, specialCharacters);
+    console.log(userPreference)
+  }
+
+  // If the user didn't pick numeric:
+  else if (confirmLowerCase && confirmUpperCase && confirmSpecialCharacters) {
+    userPreference = lowerCase.concat(upperCase, specialCharacters);
+    console.log(userPreference)
+  }
+
+    // If the user didn't pick special-characters:
+    else if (confirmLowerCase && confirmUpperCase && confirmNumbers) {
+      userPreference = lowerCase.concat(upperCase, confirmNumbers);
+      console.log(userPreference)
+    }
+  
 }
