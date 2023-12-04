@@ -18,3 +18,8 @@ The following criteria has to be met:
 ## Output
 
 ## Installation
+The project was uploaded to [GitHub](https://github.com/) at the following repository:
+[https://github.com/yukitoshi12345/Password-Generator](https://github.com/yukitoshi12345/Password-Generator)
+
+You can access the deployed application with the GitHub Pages link:
+[https://yukitoshi12345.github.io/Password-Generator/](https://yukitoshi12345.github.io/Password-Generator/)
