@@ -13,6 +13,8 @@ var regex = /^[0-9]+$/;
 
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
+console.log(lowerCase);
+
 // There are 2 ways of producing upperCase. One is simply:
 // var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V","W", "X", "Y","Z"];
 // The other way is by using functions: 
@@ -29,6 +31,9 @@ var upperCase = toUpperCase(lowerCase);
 console.log(upperCase);
 
 var numeric = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+console.log(numeric);
+
 var specialCharacters = [' ', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~'];
 
 // To test the specialCharacter runs properly:
@@ -49,14 +54,22 @@ function generatePassword() {
   passwordCharacterCount = window.prompt("Please select the desired password length, ranging from 8 to 128 characters.")
   console.log("Password length: " + passwordCharacterCount);
   
+  // If User click cancel, the function exit without displaying an alert.
+  if (passwordCharacterCount === null) {
+    return;
+  }
+
   // If you leave the answer blank or non-numerical values, it alerts that a value is needed to proceed.
+
   if (!passwordCharacterCount || !regex.test(passwordCharacterCount)) {
     window.alert("Must be a value.");
+    return generatePassword();
   }  
  
   // If you leave the answer outside of 8-128, it alerts that a value between 8-128 is needed to proceed.
   else if (passwordCharacterCount < 8 || passwordCharacterCount > 128) {
     window.alert("The password length must be between 8 and 128 characters.");
+    return generatePassword();
   }
  
   // If the entered is a value between 8-128, i.e. the criteria is met, it proceed to the next step.
@@ -174,7 +187,24 @@ function generatePassword() {
   // If the user doesn't pick any options from lower/upper/numeric/special-characters:
 
   else {
-    (!confirmLowerCase && !confirmUpperCase && !confirmNumbers && !confirmSpecialCharacters) {
-      userPreference = window.alert("You must choose at least one option.")
-    }
+    (!confirmLowerCase && !confirmUpperCase && !confirmNumbers && !confirmSpecialCharacters);
+    userPreference = window.alert("You must choose at least one option.");
+  return generatePassword();
+  }
+
+  
+  // Empty variable for the password length
+  var passwordBlank = [];
+
+  // Loop for random selection
+  for (var i = 0; i < passwordCharacterCount; i++) {
+    var allChoices = userPreference[Math.floor(Math.random() * userPreference.length)];
+    passwordBlank.push(allChoices);
+    console.log(allChoices);
+  }
+
+  // Join and return the password 
+  var password = passwordBlank.join("");
+  console.log("Your Pasword is: " + password);
+  return password;
 }
