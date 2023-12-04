@@ -16,6 +16,7 @@ The following criteria has to be met:
 ## Screenshot
 
 ## Output
+Upon completing the password creation process, a secure password matching the specified criteria is generated and displayed to the user.
 
 ## Installation
 The project was uploaded to [GitHub](https://github.com/) at the following repository:
