@@ -1,4 +1,5 @@
 # Password Generator
+Developed an interactive application that empowers employees to generate customised passwords based on their chosen criteria.
 
 ## Table of Contents
 
