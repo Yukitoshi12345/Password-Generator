@@ -50,6 +50,8 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+
+// Creating function for generatePassword
 function generatePassword() {
   passwordCharacterCount = window.prompt("Please select the desired password length, ranging from 8 to 128 characters.")
   console.log("Password length: " + passwordCharacterCount);
@@ -116,7 +118,7 @@ function generatePassword() {
 
   // If the user didn't pick special-characters:
   else if (confirmLowerCase && confirmUpperCase && confirmNumbers) {
-    userPreference = lowerCase.concat(upperCase, confirmNumbers);
+    userPreference = lowerCase.concat(upperCase, numeric);
     console.log(userPreference);
   }
 
@@ -148,7 +150,7 @@ function generatePassword() {
 
   // If the user didn't pick lowercase and numeric:
   else if (confirmUpperCase && confirmSpecialCharacters) {
-    userPreference = upperCase.concat(confirmSpecialCharacters);
+    userPreference = upperCase.concat(specialCharacters);
     console.log(userPreference);
   }
 
@@ -194,17 +196,17 @@ function generatePassword() {
 
   
   // Empty variable for the password length
-  var passwordBlank = [];
+  var empty_list = [];
 
   // Loop for random selection
   for (var i = 0; i < passwordCharacterCount; i++) {
-    var allChoices = userPreference[Math.floor(Math.random() * userPreference.length)];
-    passwordBlank.push(allChoices);
-    console.log(allChoices);
+    var randomPassword = userPreference[Math.floor(Math.random() * userPreference.length)];
+    empty_list.push(randomPassword);
+    console.log(randomPassword);
   }
 
   // Join and return the password 
-  var password = passwordBlank.join("");
+  var password = empty_list.join("");
   console.log("Your Pasword is: " + password);
   return password;
 }
