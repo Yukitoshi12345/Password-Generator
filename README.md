@@ -1,5 +1,12 @@
 # Password Generator
 
+## Table of Contents
+
+- [Objectives](#objectives)
+- [Screenshot](#screenshot)
+- [Output](#output)
+- [Installation](#installation)
+- [License](#license)
 
 ## Objectives
 The following criteria has to be met:
