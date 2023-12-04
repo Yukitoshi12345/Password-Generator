@@ -1,3 +1,8 @@
+/* ================================= 
+ Global rules and element rules
+==================================== */
+
+/* ---------- Universal Selector ---------- */
 *,
 *::before,
 *::after {
@@ -12,11 +17,14 @@ body,
   padding: 0;
 }
 
+/* ---------- Body ---------- */
+
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
 }
 
+/* ---------- Mai ---------- */
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
