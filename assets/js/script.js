@@ -58,7 +58,7 @@ function generatePassword() {
   
   // If User click cancel, the function exit without displaying an alert.
   if (passwordCharacterCount === null) {
-    return;
+    return null;
   }
 
   // If you leave the answer blank or non-numerical values, it alerts that a value is needed to proceed.
