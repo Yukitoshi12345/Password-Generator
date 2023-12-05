@@ -64,7 +64,7 @@ function generatePassword() {
   // If you leave the answer blank or non-numerical values, it alerts that a value is needed to proceed.
 
   if (!passwordCharacterCount || !regex.test(passwordCharacterCount)) {
-    window.alert("Must be a value.");
+    window.alert("Must input a value.");
     return generatePassword();
   }  
  

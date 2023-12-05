@@ -31,7 +31,7 @@ Initiating password creation involves clicking the "Generate Password" button. T
 
 If the user clicks "Cancel", it closes the window pop-up.
 
-If the user enters a non-numeric input, another window pop-up informs them "Must be a value". The length selection prompts reappears, allowing the user to retry.
+If the user enters a non-numeric input, another window pop-up informs them "Must input a value". The length selection prompts reappears, allowing the user to retry.
 
 If the user enters a numeric input outside of 8-128, another window pop-up informs them "The password length must be between 8 and 128 characters". The length selection prompts reappears, allowing the user to retry.
 
