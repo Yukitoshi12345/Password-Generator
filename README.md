@@ -22,7 +22,7 @@ The following criteria has to be met:
 - The generated password is displayed to the user either through an alert or on the page.
 
 ## Video
-![](assets/videos/Password-Generator-Video.mp4)
+![](assets/videos/Password-Generator-Video.gif)
 
 ## Output
 Upon completing the password creation process, a secure password matching the specified criteria is generated and displayed to the user.
