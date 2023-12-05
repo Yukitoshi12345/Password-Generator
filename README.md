@@ -35,7 +35,7 @@ If the user enters a non-numeric input, another window pop-up informs them "Must
 
 If the user enters a numeric input outside of 8-128, another window pop-up informs them "The password length must be between 8 and 128 characters". The length selection prompts reappears, allowing the user to retry.
 
-Upon entering a valid password length, a series of four pop-ups appear, each asking whether to include lowercase letters, uppercase letters, numbers, or special characters in the generated password. Clicking "Yes" for at least one option is mandatory; selecting "No" for all options triggers an error message and returns to the initial password length prompt.
+Upon entering a valid password length, a series of four pop-ups appear, each asking whether to include lowercase letters, uppercase letters, numbers, or special characters in the generated password. Clicking "Yes" for at least one option is mandatory; selecting "No" for all options will have another window pop-up informing them "You must choose at least one option" and returns to the initial password length prompt.
 
 Once at least one inclusion option is chosen, a password is generated based on the selected criteria and displayed to the user.
 
