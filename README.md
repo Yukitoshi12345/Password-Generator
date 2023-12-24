@@ -8,6 +8,7 @@ Developed an interactive application that empowers employees to generate customi
 - [Explanation of Video](#explanation-of-video)
 - [Output](#output)
 - [Installation](#installation)
+- [Central Grader Comments](#central-grader-comments)
 - [License](#license)
 
 ## Objectives
@@ -48,6 +49,15 @@ The project was uploaded to [GitHub](https://github.com/) at the following repos
 
 You can access the deployed application with the GitHub Pages link:
 [https://yukitoshi12345.github.io/Password-Generator/](https://yukitoshi12345.github.io/Password-Generator/)
+
+## Central Grader Comments
+Grade: 100/100
+
+Excellent job on the Password Generator Challenge! Upon launching your application the browser loads smoothly and without errors. The user is then presented with a mobile responsive UI where they can select to generate a random password based on their responses in the prompt windows. The user then has the option to select a character length and character types including uppercase, lowercase, numerical and special. Followed by their generated password being displayed in the UI for them to use. I have to say how impressed I am to see you build upon the skills you acquired so far to create a fully functioning javascript application.
+
+You created a unique name for your repository avoiding words like 'challenge', ‘homework’ or ‘assignment’, and you were able to follow best practices for file structure and naming conventions. In the same respect, you were able to follow proper coding conventions with indentation and overall structure. You were able to show your work, with multiple descriptive commits, and your repository contains a quality README file that includes a brief description, a screenshot offering a preview of your application and a link to the deployed site. Overall great job.
+
+- Sam, Centralized Grading.
 
 ## License
 This project is licensed under the [MIT License](https://github.com/Yukitoshi12345/Password-Generator/blob/main/LICENSE).
