@@ -1,3 +1,5 @@
+![HTML CSS](https://img.shields.io/badge/HTML-CSS-blue) ![JavaScript](https://img.shields.io/badge/Javascript-orange)
+
 # Password Generator
 Developed an interactive application that empowers employees to generate customised passwords based on their chosen criteria.
 
