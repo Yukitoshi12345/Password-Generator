@@ -1,6 +1,7 @@
 ![HTML CSS](https://img.shields.io/badge/HTML-CSS-blue) ![JavaScript](https://img.shields.io/badge/Javascript-orange)
 
 # Password Generator
+
 Developed an interactive application that empowers employees to generate customised passwords based on their chosen criteria.
 
 ## Table of Contents
@@ -14,23 +15,25 @@ Developed an interactive application that empowers employees to generate customi
 - [License](#license)
 
 ## Objectives
+
 The following criteria has to be met:
 
 - The user clicks a button to generate a new password.
 - The user is presented with a series of prompts to define the criteria for their password.
 - The user chooses a password length between 8 and 128 characters.
-- The user selects whether or not to include lowercase letters, uppercase letters, numbers, and special characters in the password. 
+- The user selects whether or not to include lowercase letters, uppercase letters, numbers, and special characters in the password.
 - At least one character type must be selected.
 - User input is validated to ensure that it adheres to the specified criteria.
 - Upon completion of all prompts, a password is generated based on the selected criteria.
 - The generated password is displayed to the user either through an alert or on the page.
 
 ## Video
+
 ![](assets/videos/Password-Generator-Video.gif)
 
 ## Explanation of Video
 
-Initiating password creation involves clicking the "Generate Password" button. This action prompts a pop-up window requesting the desired password length, which must be a numeric value between 8 and 128 characters. 
+Initiating password creation involves clicking the "Generate Password" button. This action prompts a pop-up window requesting the desired password length, which must be a numeric value between 8 and 128 characters.
 
 If the user clicks "Cancel", it closes the window pop-up.
 
@@ -43,9 +46,11 @@ Upon entering a valid password length, a series of four pop-ups appear, each ask
 Once at least one inclusion option is chosen, a password is generated based on the selected criteria and displayed to the user.
 
 ## Output
+
 Upon completing the password creation process, a secure password matching the specified criteria is generated and displayed to the user.
 
 ## Installation
+
 The project was uploaded to [GitHub](https://github.com/) at the following repository:
 [https://github.com/yukitoshi12345/Password-Generator](https://github.com/yukitoshi12345/Password-Generator)
 
@@ -53,6 +58,7 @@ You can access the deployed application with the GitHub Pages link:
 [https://yukitoshi12345.github.io/Password-Generator/](https://yukitoshi12345.github.io/Password-Generator/)
 
 ## Central Grader Comments
+
 Grade: 100/100
 
 Excellent job on the Password Generator Challenge! Upon launching your application the browser loads smoothly and without errors. The user is then presented with a mobile responsive UI where they can select to generate a random password based on their responses in the prompt windows. The user then has the option to select a character length and character types including uppercase, lowercase, numerical and special. Followed by their generated password being displayed in the UI for them to use. I have to say how impressed I am to see you build upon the skills you acquired so far to create a fully functioning javascript application.
@@ -62,4 +68,5 @@ You created a unique name for your repository avoiding words like 'challenge', â
 - Sam, Centralized Grading.
 
 ## License
+
 This project is licensed under the [MIT License](https://github.com/Yukitoshi12345/Password-Generator/blob/main/LICENSE).
