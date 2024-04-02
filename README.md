@@ -2,7 +2,7 @@
 
 <h1 align = "center"> Password Generator </h1>
 
-Developed an interactive application that empowers employees to generate customised passwords based on their chosen criteria.
+In today's digital age, where employees frequently handle sensitive data, the importance of robust security measures cannot be overstated. One fundamental aspect of securing data is the creation of strong, hard-to-crack passwords. To address this need, a solution has been designed that allows employees to generate random passwords that adhere to specific, customisable criteria. This system ensures that users can create a password that not only meets a set of defined standards, including length and character type, but also enhances the overall security of the data they access. By integrating a user-friendly interface that prompts the employee to select their preferred criteria and validates their choices, the process culminates in the generation of a password tailored to the user's security needs, significantly bolstering data protection efforts.
 
 ## Table of Contents
 
