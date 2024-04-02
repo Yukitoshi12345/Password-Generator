@@ -1,37 +1,59 @@
-![HTML CSS](https://img.shields.io/badge/HTML-CSS-blue) ![JavaScript](https://img.shields.io/badge/Javascript-orange)
+![Badge](https://img.shields.io/badge/License-MIT-yellow.svg) ![HTML](https://img.shields.io/badge/HTML-blue) ![CSS](https://img.shields.io/badge/CSS-red) ![JavaScript](https://img.shields.io/badge/JavaScript-yellow)
 
-# Password Generator
+<h1 align = "center"> Password Generator </h1>
 
 Developed an interactive application that empowers employees to generate customised passwords based on their chosen criteria.
 
 ## Table of Contents
 
-- [Objectives](#objectives)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Technologies Used](#technologies-used)
 - [Video](#video)
-- [Explanation of Video](#explanation-of-video)
 - [Output](#output)
 - [Installation](#installation)
 - [Central Grader Comments](#central-grader-comments)
 - [License](#license)
 
-## Objectives
+## User Story
 
-The following criteria has to be met:
+```
+AS AN employee with access to sensitive data
+I WANT to randomly generate a password that meets certain criteria
+SO THAT I can create a strong password that provides greater security
+```
 
-- The user clicks a button to generate a new password.
-- The user is presented with a series of prompts to define the criteria for their password.
-- The user chooses a password length between 8 and 128 characters.
-- The user selects whether or not to include lowercase letters, uppercase letters, numbers, and special characters in the password.
-- At least one character type must be selected.
-- User input is validated to ensure that it adheres to the specified criteria.
-- Upon completion of all prompts, a password is generated based on the selected criteria.
-- The generated password is displayed to the user either through an alert or on the page.
+## Acceptance Criteria
+
+```
+GIVEN I need a new, secure password
+WHEN I click the button to generate a password
+THEN I am presented with a series of prompts for password criteria
+WHEN prompted for password criteria
+THEN I select which criteria to include in the password
+WHEN prompted for the length of the password
+THEN I choose a length of at least 8 characters and no more than 128 characters
+WHEN asked for character types to include in the password
+THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
+WHEN I answer each prompt
+THEN my input should be validated and at least one character type should be selected
+WHEN all prompts are answered
+THEN a password is generated that matches the selected criteria
+WHEN the password is generated
+THEN the password is either displayed in an alert or written to the page
+```
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
 
 ## Video
 
 ![](assets/videos/Password-Generator-Video.gif)
 
-## Explanation of Video
+## Output
 
 Initiating password creation involves clicking the "Generate Password" button. This action prompts a pop-up window requesting the desired password length, which must be a numeric value between 8 and 128 characters.
 
@@ -44,10 +66,6 @@ If the user enters a numeric input outside of 8-128, another window pop-up infor
 Upon entering a valid password length, a series of four pop-ups appear, each asking whether to include lowercase letters, uppercase letters, numbers, or special characters in the generated password. Clicking "Yes" for at least one option is mandatory; selecting "No" for all options will have another window pop-up informing them "You must choose at least one option" and returns to the initial password length prompt.
 
 Once at least one inclusion option is chosen, a password is generated based on the selected criteria and displayed to the user.
-
-## Output
-
-Upon completing the password creation process, a secure password matching the specified criteria is generated and displayed to the user.
 
 ## Installation
 
