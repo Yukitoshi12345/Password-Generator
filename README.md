@@ -51,7 +51,7 @@ THEN the password is either displayed in an alert or written to the page
 
 ## Video
 
-![](assets/videos/Password-Generator-Video.gif)
+![](assets/videos/screenrecord.gif)
 
 ## Output
 
